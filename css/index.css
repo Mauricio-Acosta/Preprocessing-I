@@ -146,6 +146,15 @@ header {
   padding-bottom: 2%;
   background-color: dodgerblue;
 }
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav a {
+    padding: 2%;
+  }
+}
 header h1 {
   font-size: 4rem;
   padding-top: 1%;
@@ -180,10 +189,10 @@ header nav a {
   font-size: 1.1rem;
 }
 .summary {
+  height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-self: ;
+  flex-wrap: wrap;
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 2%;
@@ -191,4 +200,32 @@ header nav a {
 .summary h2 {
   color: dodgerblue;
   font-size: 2rem;
+  padding-bottom: 1%;
+}
+.summary .second {
+  padding-top: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: -2%;
+}
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+}
+.history h2 {
+  color: dodgerblue;
+  font-size: 2rem;
+  padding-bottom: 1%;
+}
+.history div {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+.contact {
+  padding-top: 2%;
 }

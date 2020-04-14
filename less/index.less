@@ -78,6 +78,15 @@ body{
 //Header//
 
 header {
+	@media (max-width: 500px) {
+		nav{
+			display: flex;
+			flex-direction: column;
+			a{
+				padding: 2%
+			}
+		}
+	}
 	.center();
 	display: flex;
 	flex-direction: column;
@@ -104,6 +113,7 @@ header {
 	}//nav closing//
   }// Header closing bracket//
 
+
 //Introduction//
 
   .intro {
@@ -124,23 +134,55 @@ header {
 	}
   }//.intro closing//
 
-  //Body//
+                                           //Body//
 
 .summary{
+	height: 150px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-self: ;
+	flex-wrap: wrap;
 	margin-left: 5%;
 	margin-right: 5%;
 	padding-top: 2%;
-	
 
 	h2{
 		color: @sec-color;
 		font-size: @sec-size;
+		padding-bottom: 1%;
 	}
 
-	
+	.second{
+		padding-top: 2.3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-top: -2%;
+	}
+}//summary closing//
 
+//WorkHistory//
+.history{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 2%;
+
+	h2{
+		color: @sec-color;
+		font-size: @sec-size;
+		padding-bottom: 1%;
+	}
+
+	div{
+		.line-space();
+		font-size: @p-sizing;
+	}
+
+}//workhistory closing//
+
+//Contact//
+.contact{
+	padding-top: 2%;
 }
